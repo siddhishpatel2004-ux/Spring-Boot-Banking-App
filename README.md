@@ -347,7 +347,7 @@ This project was built to strengthen and demonstrate practical understanding of 
 ## Author
 
 **[Siddhish Patel]**
-Java Backend Developer
+Junior Java Backend Developer
 
 GitHub: [(https://github.com/siddhishpatel2004-ux)]
 LinkedIn: [www.linkedin.com/in/siddhish-patel-9a958b37a]
