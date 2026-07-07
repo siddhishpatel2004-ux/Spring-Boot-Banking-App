@@ -12,6 +12,8 @@ public class AccountService {
      Repo repository;
     @Autowired
     TransactionsRepository Trepository;
+    @Autowired
+    JwtService jwtService;
 
     public String Login(Account acc){
 
@@ -31,10 +33,10 @@ public class AccountService {
         if(!(exists.getPassword().equals(Password))){
             throw new RuntimeException("incorrect Password");
         }
+        String token=jwtService.generateToken(acc.getEmailAddress());
 
 
-
-        return "Login Successful ";
+        return "Login Successful "+token;
     }
     public String Create_account(Account acc){
     String name=acc.getName();
